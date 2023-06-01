@@ -111,6 +111,7 @@ if cevap == "admin":
         print("Sinyal Listesi:")
         for sinyal in sinyal_listesi:
             print("Konum:", sinyal[0],"Sinyal Sayısı:", sinyal[1])
+        verileri_goster(veri)
                 
 elif cevap == "kullanıcı":
     print("""Kullanıcı olarak giriş yapıldı
