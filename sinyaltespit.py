@@ -1,3 +1,11 @@
+import pandas as pd
+excel_dosya_yolu = r"C:\Users\melis\OneDrive\Documents\python_sinyaltespit_projesi\python_sinyaltespit_projesi\sinyal_konum.xlsx"
+veri = pd.read_excel(excel_dosya_yolu)
+
+def verileri_goster(veri):
+    print("Aşağıdaki konumların hepsi taranmıştır:\n")
+    print(veri)
+
 konumlar = ("2100 SOKAK NO:5 GÜNEŞ APT. HATAY/ARSUZ", "2100 SOKAK NO:6 ÇİÇEK APT.HATAY/ARSUZ", "2100 SOKAK NO:14 DİNÇER APT.HATAY/ARSUZ")
 
 # Alınan sinyallerin ve hangi konumdan alındığının yazılacağı liste
@@ -115,3 +123,4 @@ elif cevap == "kullanıcı":
         print("Sinyal Listesi:")
         for sinyal in sinyal_listesi:
             print("Konum:", sinyal[0], "Sinyal Sayısı:", sinyal[1])
+             verileri_goster(veri)
